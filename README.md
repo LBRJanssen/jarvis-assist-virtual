@@ -1,4 +1,4 @@
-# 🤖 J.A.R.V.I.S. - Assistente de Voz Pessoal
+#  J.A.R.V.I.S. - Assistente de Voz Pessoal
 
 Assistente de voz inteligente para Windows, inspirado no JARVIS do Iron Man.
 
