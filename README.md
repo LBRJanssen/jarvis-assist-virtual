@@ -2,16 +2,16 @@
 
 Assistente de voz inteligente para Windows, inspirado no JARVIS do Iron Man.
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- 🎤 **Wake Word** - Ativação por voz usando Porcupine
-- 🧠 **IA Local** - Processamento com Llama 3.1 via Ollama
-- 🎨 **Interface Visual** - Partículas 3D reativas (Tauri)
-- 🔊 **TTS/STT** - Whisper para transcrição, Edge TTS para síntese
-- 🔐 **Autenticação por Voz** - Apenas você pode comandar
-- 💻 **Controle do PC** - Abre apps, controla volume, etc.
+-  **Wake Word** - Ativação por voz usando Porcupine
+-  **IA Local** - Processamento com Llama 3.1 via Ollama
+-  **Interface Visual** - Partículas 3D reativas (Tauri)
+-  **TTS/STT** - Whisper para transcrição, Edge TTS para síntese
+-  **Autenticação por Voz** - Apenas você pode comandar
+-  **Controle do PC** - Abre apps, controla volume, etc.
 
-## 🚀 Instalação
+##  Instalação
 
 ### Pré-requisitos
 
@@ -59,7 +59,7 @@ npm install
 npx tauri build
 ```
 
-## 🎮 Uso
+##  Uso
 
 ### Iniciar JARVIS
 
@@ -89,24 +89,7 @@ Diga **"Jarvis"** para ativar, depois:
 - "Abre o Valorant"
 - "Qual a previsão do tempo?"
 
-## 📁 Estrutura
-
-```
-jarvis/
-├── backend/          # Backend Python
-│   ├── main.py      # Fluxo principal
-│   ├── brain.py     # IA (Ollama)
-│   ├── wake_word_porcupine.py  # Detecção wake word
-│   ├── speech_to_text.py  # Whisper
-│   ├── text_to_speech.py  # Edge TTS
-│   └── ...
-├── desktop/          # Interface Tauri
-│   ├── src/         # Frontend (HTML/JS)
-│   └── src-tauri/   # Backend Rust
-└── README.md
-```
-
-## ⚙️ Configuração
+##  Configuração
 
 Edite `backend/config.py` para personalizar:
 
@@ -116,7 +99,7 @@ Edite `backend/config.py` para personalizar:
 - Voz TTS
 - Modelo Ollama
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 **JARVIS não responde:**
 - Verifique se Ollama está rodando: `ollama serve`
@@ -130,11 +113,7 @@ Edite `backend/config.py` para personalizar:
 - Verifique se a Access Key está correta
 - Obtenha nova chave em: https://console.picovoice.ai/
 
-## 📝 Licença
-
-MIT License - Use livremente!
-
-## 🙏 Créditos
+##  Créditos
 
 - **Porcupine** - Picovoice (Wake Word)
 - **Whisper** - OpenAI (Speech-to-Text)
@@ -144,4 +123,4 @@ MIT License - Use livremente!
 
 ---
 
-**Desenvolvido com ❤️ para automação pessoal**
+**Desenvolvido para automação pessoal**
