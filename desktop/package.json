@@ -1,0 +1,21 @@
+{
+  "name": "jarvis-desktop",
+  "version": "1.0.0",
+  "description": "J.A.R.V.I.S. - Interface Desktop",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "npx serve src -p 5173 -s",
+    "tauri": "tauri",
+    "tauri:dev": "npm run dev & tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "author": "Lucas",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0"
+  }
+}
+

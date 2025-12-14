@@ -1,0 +1,85 @@
+/* ========================================
+   JARVIS - Interface Visual
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#status-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0, 255, 255, 0.7);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Estados */
+body.state-idle #status-text {
+    color: rgba(0, 255, 255, 0.7);
+}
+
+body.state-listening #status-text {
+    color: rgba(255, 165, 0, 0.9);
+    text-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+}
+
+body.state-processing #status-text {
+    color: rgba(0, 127, 255, 0.9);
+    text-shadow: 0 0 20px rgba(0, 127, 255, 0.7);
+}
+
+body.state-executing #status-text {
+    color: rgba(57, 255, 20, 0.9);
+    text-shadow: 0 0 20px rgba(57, 255, 20, 0.7);
+}
+
+body.state-error #status-text {
+    color: rgba(255, 0, 0, 0.9);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+/* Glow effect para o canvas */
+#particles {
+    filter: blur(0px);
+}
+
+body.state-listening #particles {
+    filter: blur(0.5px);
+}
+
+

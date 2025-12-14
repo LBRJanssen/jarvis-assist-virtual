@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# JARVIS específico
+backend/data/audio/*.wav
+backend/data/audio/*.mp3
+backend/data/logs/*.log
+backend/data/voice_profiles/*.pkl
+backend/data/.first_run_complete
+
+# Modelos (muito grandes)
+backend/data/vosk-model-*/
+backend/data/*.zip
+
+# Tauri
+desktop/src-tauri/target/
+desktop/src-tauri/Cargo.lock
+
+# Node
+desktop/node_modules/
+desktop/package-lock.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop-links.json
+
+# Builds
+*.exe
+*.msi
+*.dmg
+*.app
+
+# Logs
+*.log
+
+# Temporários
+*.tmp
+*.temp
+
